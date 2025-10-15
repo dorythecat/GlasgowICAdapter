@@ -10,10 +10,17 @@ This is my journal of the design and building process of **Glasgow IC Adapter**.
 You can view this journal in more detail on **Hack Club Blueprint** [here](https://blueprint.hackclub.com/projects/473).
 
 
-## 10/13/2025 - Brainstormed ideas and selected a few parts  
+## 10/13/2025 3 PM - Brainstormed ideas and selected a few parts  
 
 OK, so, for starters, I brainstormed the first ideas on the project, mostly by myself, but with some help from the Glasgow's community. I've arrived at what I would consider more or less a rough idea of what I want to make. I want to be able to interface with up to 32-pin chips, by using a simple ZFS. Sadly, the Glasgow revC3 only has 16 total channels, coming 8 from each port. To solve this issue, I've decided on using the TMUX1209 Bidirectional Multiplexers. Not only are they cheap and tiny, but there's also two hidden features that make these the perfect candidates. First, they're 2-Channel. Each channel can control up to 4 IOs. This means that with only two of these chips and 4 IOs + 3 for the enable and address pins, I have more than enough for the entire 16 pins each port needs to handle, and I can theoretically get double the speed when reading/writing than with single channel multiplexers. I even have one free IO I can hookup to an LED or whatever I want. Probably will be NC though. Apart from this, they're also CMOS multiplexers, so they can work with 1.8V logic, which is one of the many features I adore about the Glasgow Interface Explorer. Keeping that feature makes this a match made in heaven.
 
 In other news, I was also thinking on how to handle choosing where pins were connected to. The solution I think I'm going to go with, is give each pin a jumper. Depending on the position, each pin will be able to be connected to either VIO, GND, its respective multiplexer IO, or VSENSE, so I can measure DAC signals and similar. This is the cheapest, and probably most effective solution, though a part of me fears it might not be compact enough. We'll see once I actually go to design the circuit. For now, I still need to think about how to layout and connect everything, and ensure I get all the dimensions right. Let's hope that goes alright...![imagen.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTk5MCwicHVyIjoiYmxvYl9pZCJ9fQ==--2801182b05fb1d1239370fe12c2ed0f3f6014880/imagen.png)
+  
+
+## 10/13/2025 5 PM - Added Port A and Port B to schematic  
+
+So, I have started setting up the schematic for the board. I had to search for a connector to interface with the Glasgow, and had to import those files, plus the TMUX1209, since KiCad only includes files for the TMUX1208, and they are pin incompatible. After that slight mishap, I went on to set up the Port A and Port B connectors with a few labels and ground connections. I've decided I'm going to route the PCB with a big groundplane, which will be connected to the NC pins too, just to be safe. I really do hope that does not cause any problems down the line lol. Anyways, it doesn't seem like much loooking back at it, but I've been working non stop since the last journal entry, so this is probably as far as I'm gonna go today. I need my rest too, after all! :D
+
+![Captura de pantalla 2025-10-13 173216.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MjAxMCwicHVyIjoiYmxvYl9pZCJ9fQ==--0f6179fa9a6b26989bcf144f965f02a7c70c8eda/Captura%20de%20pantalla%202025-10-13%20173216.png)
   
 
