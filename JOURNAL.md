@@ -6,10 +6,6 @@
   ==================================================================
 -->
 
-This is my journal of the design and building process of **Glasgow IC Adapter**.  
-You can view this journal in more detail on **Hack Club Blueprint** [here](https://blueprint.hackclub.com/projects/473).
-
-
 ## 10/13/2025 3 PM - Brainstormed ideas and selected a few parts  
 
 OK, so, for starters, I brainstormed the first ideas on the project, mostly by myself, but with some help from the Glasgow's community. I've arrived at what I would consider more or less a rough idea of what I want to make. I want to be able to interface with up to 32-pin chips, by using a simple ZFS. Sadly, the Glasgow revC3 only has 16 total channels, coming 8 from each port. To solve this issue, I've decided on using the TMUX1209 Bidirectional Multiplexers. Not only are they cheap and tiny, but there's also two hidden features that make these the perfect candidates. First, they're 2-Channel. Each channel can control up to 4 IOs. This means that with only two of these chips and 4 IOs + 3 for the enable and address pins, I have more than enough for the entire 16 pins each port needs to handle, and I can theoretically get double the speed when reading/writing than with single channel multiplexers. I even have one free IO I can hookup to an LED or whatever I want. Probably will be NC though. Apart from this, they're also CMOS multiplexers, so they can work with 1.8V logic, which is one of the many features I adore about the Glasgow Interface Explorer. Keeping that feature makes this a match made in heaven.
@@ -33,5 +29,32 @@ After a bit of searching around for a good and cheap ZIF Socket (which took over
 
 Welp, I finally did it! I finished the schematic! There's still PCB routing and a looot more to do but like, this is the first step on this great little adventure! I have also decided to do devlogs every 1 or 2 hours because I feel like that 8h devlog is gonna come back and haunt me at shipping time. Anyways, now I still have to check a few things, and I'll probably ask some people for a revision over my schematic. Apart from that, we're almost there to making the PCB!!! :D
 ![Captura de pantalla 2025-10-15 165226.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MjM0OSwicHVyIjoiYmxvYl9pZCJ9fQ==--e08e51765755684f0675db68136a6db659db1dcf/Captura%20de%20pantalla%202025-10-15%20165226.png)
+  
+
+## 10/20/2025 4 PM - Layed out the footprints for the PCB  
+
+OK this was kinda hard ngl. I had to fit a lot of stuff, and since I wanted to use through-hole resistors (I have them at home so I don't have to buy new resistors), the space was kinda cramped. I also needed some measures to be precise, so I could actually plug this in. That was kinda hard and gave me even more constraining, which is never good. I had to end up pulling the official Glasgow's PCB layout just so I could actually take measurements and ensure everything would be alright. After all that, I chose footprints, I layed out components, and tweaked it to make my job easier later. I wanted to do this devlog with the routing too, but the clock was at 4h 53mins since last devlog soooo, here we are lol. Now I have to make the holes to be able to screw the board to the Glasgow with some risers, and then I will start routing the PCB. See ya then! :D
+
+![Captura de pantalla 2025-10-20 161605.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzcyNCwicHVyIjoiYmxvYl9pZCJ9fQ==--68d9bad9a4e02a519aef0d8f7e24a900c14ab60f/Captura%20de%20pantalla%202025-10-20%20161605.png)
+  
+
+## 10/20/2025 10 PM - Finished the PCB design  
+
+I finally finished the PCB design!!! It has been an arduous process, if I'm going to be completely honest with you. I had to redo the layout and wiring THREE FU****G TIMES. WHAT THE F***. Anyways, as I was saying, it has been quite the ride, and now all that's left is just cleaning a bit of the GitHub repo, searching for a few parts that I want to find for cheaper, and that should be about it. So yeah, let's hope it goes well, and that I can ship soon!
+
+If I end up spending over an hour on the rest of  this, I will make sure to make a devlog about it lol. I need all the hours I can possibly get >:3
+
+![Captura de pantalla 2025-10-20 222818.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzgyNSwicHVyIjoiYmxvYl9pZCJ9fQ==--ff44df2161cd05d01451212f3731bdbe38f9b309/Captura%20de%20pantalla%202025-10-20%20222818.png)
+  
+
+## 10/21/2025 - We're ready for production! :D  
+
+OK, so, turns out, there was still quite a good chunk of job left done to do XD. I re-positioned some stuff, and then thought I was finished. Turns out, I was wrong. After adding silkscreens and doing everything again (which took the better part of half an hour alone), I had to fight a bit to get DRC to comply. Once that was done, though, I did a render, updated the README, and put the render in the README. (Sorry for the lack of some components, but my free time and will to do minor stuff is NOT infinite).
+
+![Board 3D render](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDAwMCwicHVyIjoiYmxvYl9pZCJ9fQ==--07cea308ae84a406cb6f8766f403f5408a8156fb/render.jpg)
+
+And, after all that, I still had to go and check that my supplies were the cheapest (and most reliable) I could get. After ALL that, and three hours extra of my life spent on this "little silly project", I've finally been able to upload them to JLCPCB, and put down an order. Since I want this project only for the tickets, and I don't need a grant, I won't be shipping it until I have it fully assembled. Which means, now I've got to order the PCB and all the parts I need for it, which is gonna be *fun*, I'm sure. Hey, worst case scenario, I get an extra hour out of it, right? Right...?
+
+![Screenshot 2025-10-21 at 11-57-59 PCB Prototype & PCB Fabrication Manufacturer - JLCPCB.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDAwMSwicHVyIjoiYmxvYl9pZCJ9fQ==--18546ff46b91506baa37b51db2b730194d43e094/Screenshot%202025-10-21%20at%2011-57-59%20PCB%20Prototype%20%26%20PCB%20Fabrication%20Manufacturer%20-%20JLCPCB.png)
   
 
