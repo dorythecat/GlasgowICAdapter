@@ -47,7 +47,7 @@ If I end up spending over an hour on the rest of  this, I will make sure to make
 ![Captura de pantalla 2025-10-20 222818.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzgyNSwicHVyIjoiYmxvYl9pZCJ9fQ==--ff44df2161cd05d01451212f3731bdbe38f9b309/Captura%20de%20pantalla%202025-10-20%20222818.png)
   
 
-## 10/21/2025 - We're ready for production! :D  
+## 10/21/2025 11 AM - We're ready for production! :D  
 
 OK, so, turns out, there was still quite a good chunk of job left done to do XD. I re-positioned some stuff, and then thought I was finished. Turns out, I was wrong. After adding silkscreens and doing everything again (which took the better part of half an hour alone), I had to fight a bit to get DRC to comply. Once that was done, though, I did a render, updated the README, and put the render in the README. (Sorry for the lack of some components, but my free time and will to do minor stuff is NOT infinite).
 
@@ -56,5 +56,18 @@ OK, so, turns out, there was still quite a good chunk of job left done to do XD.
 And, after all that, I still had to go and check that my supplies were the cheapest (and most reliable) I could get. After ALL that, and three hours extra of my life spent on this "little silly project", I've finally been able to upload them to JLCPCB, and put down an order. Since I want this project only for the tickets, and I don't need a grant, I won't be shipping it until I have it fully assembled. Which means, now I've got to order the PCB and all the parts I need for it, which is gonna be *fun*, I'm sure. Hey, worst case scenario, I get an extra hour out of it, right? Right...?
 
 ![Screenshot 2025-10-21 at 11-57-59 PCB Prototype & PCB Fabrication Manufacturer - JLCPCB.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDAwMSwicHVyIjoiYmxvYl9pZCJ9fQ==--18546ff46b91506baa37b51db2b730194d43e094/Screenshot%202025-10-21%20at%2011-57-59%20PCB%20Prototype%20%26%20PCB%20Fabrication%20Manufacturer%20-%20JLCPCB.png)
+  
+
+## 10/21/2025 10 PM - Bought everything!  
+
+So, in total, this has bitten out almost 80€ from my wallet. That kinda hurt, but I'm not gonna lie, I also got myself a soldering mat, a vacuum picker, some rosin paste, and some solder paste, because I kinda needed them. Still, WOW THAT WAS A LOT OF MONEY :'(
+
+Hopefully the awesome reviewers will take it into account when reviewing my project though!!! :D (I really badly want tickets for the CNC machine ngl ngl)
+
+Anyways, this all took around 2 hours, mainly cause I had to search for a good non-leaded solder paste and rosin, and I wanted to make sure the orders were alright and shit. So yeah, all in all, this was quite tedious and expensive. More so than I would have wanted, in fact... Welp, that's life, I guess...
+
+![Screenshot 2025-10-21 at 22-42-02 Order History.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDE4MSwicHVyIjoiYmxvYl9pZCJ9fQ==--0700269840e1ba7a07ca2e76cc4f3828fc19e32d/Screenshot%202025-10-21%20at%2022-42-02%20Order%20History.png)
+![Screenshot 2025-10-21 at 22-42-33 Pedidos.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDE4MiwicHVyIjoiYmxvYl9pZCJ9fQ==--37cd87609e71e96c6fa44c96f81ca410ca0617dc/Screenshot%202025-10-21%20at%2022-42-33%20Pedidos.png)
+![Screenshot 2025-10-21 at 22-42-16 Review Order - My DigiKey.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDE4MCwicHVyIjoiYmxvYl9pZCJ9fQ==--1e168838f15f2823cad75dea909a0b4df5253292/Screenshot%202025-10-21%20at%2022-42-16%20Review%20Order%20-%20My%20DigiKey.png)
   
 
