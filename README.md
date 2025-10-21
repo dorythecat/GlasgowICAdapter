@@ -6,3 +6,5 @@ The design, by default, uses four [TMUX1209](https://www.ti.com/lit/ds/symlink/t
 
 # On the multiplexers
 The multiplexers are wired 2-on-2 to each port. Four pins serve as the signal IOs (2,3,4,5), whilst two other pins (0,1), serve as the address selectors, which are wired so that both multiplexers on each channel share these address pins. The enable pins of the multiplexers are pulled up by one 10kOhm resistor each, and can be grounded by using its respective EN_Ux jumper. These multiplexe2rs support 1.8V logic, and are wired directly into the VIO of their respective port. This allows them to work with the full voltage range of the Glasgow.
+
+![Raytraced render of the board](render.jpg)
