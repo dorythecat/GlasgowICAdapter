@@ -71,3 +71,11 @@ Anyways, this all took around 2 hours, mainly cause I had to search for a good n
 ![Screenshot 2025-10-21 at 22-42-16 Review Order - My DigiKey.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDE4MCwicHVyIjoiYmxvYl9pZCJ9fQ==--1e168838f15f2823cad75dea909a0b4df5253292/Screenshot%202025-10-21%20at%2022-42-16%20Review%20Order%20-%20My%20DigiKey.png)
   
 
+## 10/31/2025 - All the components are here! (Except the PCBs :<)  
+
+Well so that was quite the wait! But we finally have everything here! The DigiKey stuff arrived last week, but the ZIF sockets from AliExpress just arrived today! They are really cool, and work just as expected. They fit all the chips I want to use with this adapter for now, and even some extras. So I'm very happy with them. The only problem was that they came unprotected in individual plastic bags, so I had to fix some bent (and luckily none bent) pins. I also decided to put them on some packing foam I had around to avoid any more mischief from them, and threw out the undersized plastic bags.
+
+![ZIF sockets over the packing foam](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Njk1MywicHVyIjoiYmxvYl9pZCJ9fQ==--1fbd8bd8de2bb6c51d47cd483c0f046e85358840/IMG20251031120705.jpg)
+
+Between this and organizing all the items that arrived from DigiKey, it took me a good hour of work, maybe even more, so that's how this journal is justified. The PCBs should arrive next week, since they are already in France, and hopefully I can get assembling, testing, and coding as soon as possible. I am very excited about this! :D  
+
